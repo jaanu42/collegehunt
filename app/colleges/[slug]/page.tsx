@@ -533,7 +533,7 @@ export default function CollegeDetailPage() {
                       tickFormatter={(v) => `₹${v}L`}
                     />
                     <Tooltip
-                      formatter={(v: number) => [`₹${v} LPA`, "Avg Package"]}
+                      formatter={(v) => [`₹${Number(v)} LPA`, "Avg Package"]}
                       contentStyle={{
                         borderRadius: "12px",
                         border: "1px solid #e5e7eb",
@@ -566,7 +566,7 @@ export default function CollegeDetailPage() {
                       tickFormatter={(v) => `₹${v}L`}
                     />
                     <Tooltip
-                      formatter={(v: number) => [`₹${v} LPA`, "Avg Package"]}
+                      formatter={(v) => [`₹${Number(v)} LPA`, "Avg Package"]}
                       contentStyle={{
                         borderRadius: "12px",
                         border: "1px solid #e5e7eb",
