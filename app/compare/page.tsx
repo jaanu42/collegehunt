@@ -1,5 +1,5 @@
 "use client";
-
+import { Suspense } from "react";
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { colleges } from "@/data/colleges";
@@ -15,7 +15,7 @@ function formatFees(val: number) {
   return `₹${(val / 1000).toFixed(0)}K`;
 }
 
-export default function ComparePage() {
+function ComparePageInner() {
   const searchParams = useSearchParams();
 
   const [ids, setIds] = useState<number[]>([]);
@@ -359,5 +359,12 @@ export default function ComparePage() {
 
       </div>
     </main>
+  );
+}
+export default function ComparePage() {
+  return (
+    <Suspense>
+      <ComparePageInner />
+    </Suspense>
   );
 }
