@@ -366,10 +366,10 @@ const [loading, setLoading] = useState(true);
         <>
           <CompareTray count={shortlisted.length} />
           <OnboardingModal
-            onComplete={(data) => {
-              localStorage.setItem("user-preferences", JSON.stringify(data));
-              setPreferences(data);
-            }}
+           onComplete={(data) => {
+  localStorage.setItem("user-preferences", JSON.stringify(data));
+  setPreferences(data as Preferences);
+}}
           />
         </>
       )}
