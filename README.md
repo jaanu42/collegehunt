@@ -2,8 +2,8 @@
 
 College discovery and decision platform for Indian students.
 
-**Live:** https://collegehunt.vercel.app
-
+**Live:** [https://collegehunt.vercel.app
+](https://collegehunt-4vqb.vercel.app/)
 ## Setup
 
 ```bash
